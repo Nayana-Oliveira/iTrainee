@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vaga.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" type="imagex/png" href="../img/icone.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Vaga Front-end | ITrainee</title>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <a href="../itrainee.html" class="logo">
+        <img src="../img/icone.png" alt="ITrainee Logo" class="logo-img" />
+        ITrainee
+      </a>
+      <div class="nav-links">
+        <a href="../itrainee.html" class="active">Página Inicial</a>
+        <div class="profile-icon" id="profileIcon">
+          <a href="login.html" class="nav-link profile-icon">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="vaga-info" data-aos="fade-up" data-aos-duration="800">
+      <h1>Estágio em Desenvolvimento Front-end</h1>
+      <p><strong>Empresa:</strong> Tech Innovators</p>
+      <p><strong>Modalidade:</strong> Remoto</p>
+      
+      <div class="detalhes-vaga">
+        <div class="detalhes-coluna" data-aos="fade-right" data-aos-delay="200">
+          <p><strong>Requisitos:</strong></p>
+          <ul>
+            <li>Conhecimentos sólidos em HTML5</li>
+            <li>Estilo com CSS3 moderno e responsivo</li>
+            <li>Javascript (ES6+)</li>
+            <li>Git e versionamento de código</li>
+            <li>Boa comunicação e vontade de aprender</li>
+          </ul>
+        </div>
+
+        <div class="detalhes-coluna" data-aos="fade-left" data-aos-delay="400">
+          <p class="vaga-salario">Bolsa: R$1800 + Benefícios</p>
+          <p><strong>Benefícios:</strong></p>
+          <ul>
+            <li>Vale Refeição e Transporte</li>
+            <li>Acesso a cursos e mentorias</li>
+            <li>Horário flexível</li>
+            <li>Possibilidade de efetivação</li>
+          </ul>
+        </div>
+      </div>
+
+      <p data-aos="fade-up" data-aos-delay="600">Se você busca uma oportunidade para crescer na área de Front-end com uma equipe moderna e inovadora, essa vaga é para você!</p>
+      <a href="#" class="submit-btn" onclick="apply()" data-aos="zoom-in" data-aos-delay="800">
+        <i class="fas fa-paper-plane"></i> Candidatar-se
+      </a>
+    </section>
+
+    <footer class="footer" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="footer-container">
+          <div class="footer-grid">
+              <div class="footer-column">
+                  <div class="footer-logo">
+                      <img src="../img/icone.png" alt="Logo" class="logo-img">
+                      <span class="logo-text">iTrainee</span>
+                  </div>
+                  <p class="footer-about">Plataforma de desenvolvimento profissional e conexão de talentos com o mercado de tecnologia.</p>
+              </div>
+  
+              <div class="footer-column">
+                  <h4 class="footer-title">Links Rápidos</h4>
+                  <ul class="footer-links">
+                      <li><a href="../itrainee.html"><i class="fas fa-chevron-right"></i> ITrainee</a></li>
+                      <li><a href="../iTrainee-perfil/perfil.html"><i class="fas fa-chevron-right"></i> Perfil</a></li>
+                      <li><a href="../Projeto integrador/projeto-integrador.html"><i class="fas fa-chevron-right"></i> Sobre nós</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-column">
+                  <h4 class="footer-title">Newsletter</h4>
+                  <p class="newsletter-text">Assine para receber nossas atualizações.</p>
+                  <form class="newsletter-form">
+                      <input type="email" placeholder="Seu e-mail" required>
+                      <button type="submit" class="newsletter-btn">
+                          <i class="fas fa-paper-plane"></i>
+                      </button>
+                  </form>
+              </div>
+          </div>
+  
+          <div class="footer-bottom">
+              <div class="footer-copyright">
+                  &copy; <span id="current-year"></span> ITrainee. Todos os direitos reservados.
+              </div>
+              <div class="footer-legal">
+                  <a href="politica-privacidade.html">Política de Privacidade</a>
+                  <a href="termos-uso.html">Termos de Uso</a>
+                  <a href="cookies.html">Cookies</a>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="vaga.js"></script>
+  </body>
+</html>

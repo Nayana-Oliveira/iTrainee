@@ -1,0 +1,324 @@
+:root {
+    --primary-color: #2B2A4C;
+    --secondary-color: #EA906C;
+    --accent-color: #E0341F;
+    --background-color: #EEE2DE;
+    --text-color: #1E1E1E;
+    --color-2: #4d4a92;
+    --transition: 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    padding: 1.5rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid var(--secondary-color);
+    backdrop-filter: blur(10px);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-img {
+    height: 2rem;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover .logo-img {
+    transform: scale(1.1);
+  }
+  
+  .logo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60%;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: width 0.3s;
+  }
+  
+  .logo:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-links a:hover, .nav-links a.active {
+    color: var(--accent-color); 
+    transform: translateY(-2px);
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%; 
+  }
+  
+  .container {
+    background: #fff;
+    border-radius: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .form-box {
+    flex: 1 1 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .left {
+    background: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 24px 0 0 24px;
+    animation: slideInLeft 0.8s ease;
+  }
+  
+  @keyframes slideInLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  .right {
+    animation: slideInRight 0.8s ease;
+  }
+  
+  @keyframes slideInRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  .form-box h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .left p {
+    margin-bottom: 25px;
+  }
+  
+  .register-btn,
+  .btn {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .register-btn:hover {
+    background: #fff;
+    color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+  
+  .form-content {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .input-box {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 14px 18px 14px 15px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: border var(--transition);
+  }
+  
+  .input-box input:focus {
+    border-color: var(--primary-color);
+  }
+  
+  .input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+  .terms {
+    font-size: 0.8rem;
+    color: #666;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .terms a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn {
+    background: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 20px;
+    transition: var(--transition);
+  }
+  
+  .btn:hover {
+    background: #f8642a;
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .form-box {
+      border-radius: 0;
+      padding: 40px 25px;
+    }
+  
+    .left {
+      border-radius: 24px 24px 0 0;
+    }
+  
+    .form-box h1 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 3rem;
+    margin-top: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .registration-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .title {
+        font-size: 1.75rem;
+    }
+}
+  

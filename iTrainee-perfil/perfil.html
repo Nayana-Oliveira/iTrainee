@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - ITrainee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="img/icone.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../itrainee.html" class="logo">
+            <img src="../img/icone.png" alt="ITrainee Logo" class="logo-img">
+            ITrainee
+        </a>
+        <div class="nav-links">
+            <a href="../itrainee.html" class="active">Página Inicial</a>
+            <div class="profile-icon" id="profileIcon">
+                <a href="perfil.html" class="nav-link profile-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="new-thread-section">
+            <div class="profile-photo-card">
+                <div class="photo-upload">
+                    <img src="avatar-placeholder.png" id="profilePhoto">
+                    <div class="upload-overlay">
+                        <input type="file" id="photoInput" accept="image/*">
+                        <label for="photoInput"><i class="fas fa-camera"></i></label>
+                    </div>
+                </div>
+                <h2 id="userName">Nome de usuário</h2>
+                <p class="user-email">email</p>
+            </div>
+
+            <form class="thread-form" id="profileForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <h3><i class="fas fa-user-edit"></i> Informações Pessoais</h3>
+                        <div class="form-group">
+                            <label>Nome Completo</label>
+                            <input type="text" value="" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Data de Nascimento</label>
+                            <input type="date" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input type="tel" value="" placeholder="Digite seu número de telefone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3><i class="fas fa-briefcase"></i> Dados Profissionais</h3>
+                        <div class="form-group">
+                            <label>Cargo Atual</label>
+                            <input type="text" value="" placeholder="Digite seu cargo">
+                        </div>
+                        <div class="form-group">
+                            <label>Experiência</label>
+                            <select>
+                                <option>Sem experiência</option>
+                                <option>1-3 anos</option>
+                                <option>3-5 anos</option>
+                                <option>5+ anos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Habilidades</label>
+                            <input type="text" value="" placeholder="Digite suas habilidades">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3><i class="fas fa-lock"></i> Segurança</h3>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="password" placeholder="Confirme seu email">
+                    </div>
+                    <div class="form-group">
+                        <label>Alterar Senha</label>
+                        <input type="password" placeholder="Nova senha">
+                    </div>
+                    <div class="form-group">
+                        <label>Confirmar Senha</label>
+                        <input type="password" placeholder="Confirme a nova senha">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <input type="file" id="fileInput" name="myFile" style="display: none;">
+                    <button type="reset" class="cancel-btn">Cancelar</button>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-save"></i> Salvar Alterações
+                    </button>
+                    <label for="fileInput" class="import-btn">
+                        <i class="fas fa-upload"></i> Importe seu currículo
+                    </label>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="../img/icone.png" alt="Logo" class="logo-img">
+                        <span class="logo-text">iTrainee</span>
+                    </div>
+                    <p class="footer-about">Plataforma de desenvolvimento profissional e conexão de talentos com o mercado de tecnologia.</p>
+                </div>
+    
+                <div class="footer-column">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="../itrainee.html"><i class="fas fa-chevron-right"></i> ITrainee</a></li>
+                        <li><a href="perfil.html"><i class="fas fa-chevron-right"></i> Perfil</a></li>
+                        <li><a href="../Projeto integrador/projeto-integrador.html"><i class="fas fa-chevron-right"></i> Sobre nós</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="newsletter-text">Assine para receber nossas atualizações.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; <span id="current-year"></span> ITrainee. Todos os direitos reservados.
+                </div>
+                <div class="footer-legal">
+                    <a href="politica-privacidade.html">Política de Privacidade</a>
+                    <a href="termos-uso.html">Termos de Uso</a>
+                    <a href="cookies.html">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="perfil.js"></script>
+</body>
+</html>

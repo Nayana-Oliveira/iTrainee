@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITrainee</title>
+    <link rel="stylesheet" href="itrainee.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/icone.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="itrainee.html" class="logo">
+            <img src="img/icone.png" alt="ITrainee Logo" class="logo-img">
+            iTrainee
+        </a>
+        <div class="nav-links">
+            <a href="itrainee.html" class="active vagas-btn">Página Inicial</a>
+            <div class="profile-icon" id="profileIcon">
+                <a href="iTrainee-login-pergunta/pergunta.html" class="nav-link profile-icon"></a>
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Encontre o Estágio Perfeito com <span class="accent-text">iTrainee!</span></h1>
+                <p>Conectamos talentos emergentes a oportunidades incríveis em tecnologia. Sua carreira começa aqui!</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/mulher trabalhando.png" alt="Jovem profissional trabalhando" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="search-section">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Pesquisar estágio">
+                <div class="search-controls">
+                    <button class="apply-btn">Buscar</button>
+                </div>
+            </div>
+
+            <div class="job-tags">
+                <span class="tag">Desenvolvedor</span>
+                <span class="tag">Back-end</span>
+                <span class="tag">Front-End</span>
+                <span class="tag">Design</span>
+                <span class="tag">Phyton</span>
+                <span class="tag">Java</span>
+                <span class="tag">SQL</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Engenharia de dados</span>
+                <span class="tag">OpenSSL</span>
+                <span class="tag">Kotlin</span>
+            </div>
+        </section>
+
+        <div class="jobs-grid" id="jobsContainer">
+            <!-- Vaga 1 -->
+            <div class="job-card" data-type="Estágio" data-location="Remoto" data-tags="desenvolvedor front-end tecnologia html css javascript">
+                <h3>Desenvolvedor Front-End</h3>
+                <p style="color: var(--accent-color); margin: 0.5rem 0;">Tech Innovators</p>
+                <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+                    <span><i class="fas fa-map-marker-alt"></i> Remoto</span>
+                    <span><i class="fas fa-clock"></i> Estágio</span>
+                </div>
+                <div class="job-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <p style="margin: 1rem 0; font-weight: bold;">R$ 1.800 + Benefícios</p>
+                <a href="iTrainee-vaga/vaga.html" class="apply-btn">Candidatar-se</a>
+            </div>
+
+            <!-- Vaga 2 -->
+            <div class="job-card" data-type="Estágio" data-location="Híbrido" data-tags="design figma ui/ux">
+                <h3>Designer UX/UI</h3>
+                <p style="color: var(--accent-color); margin: 0.5rem 0;">Digital Solutions</p>
+                <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+                    <span><i class="fas fa-map-marker-alt"></i> Híbrido - SP</span>
+                    <span><i class="fas fa-clock"></i> Estágio</span>
+                </div>
+                <div class="job-tags">
+                    <span class="tag">Figma</span>
+                    <span class="tag">Adobe XD</span>
+                    <span class="tag">Photoshop</span>
+                </div>
+                <p style="margin: 1rem 0; font-weight: bold;">R$ 1.600 + Vale Transporte</p>
+                <a href="#" class="apply-btn">Candidatar-se</a>
+            </div>
+
+            <!-- Vaga 3 -->
+            <div class="job-card" data-type="Estágio" data-location="Híbrido" data-tags="desenvolvedor back-end tecnologia node.js java c#">
+                <h3>Desenvolvedor Back-end</h3>
+                <p style="color: var(--accent-color); margin: 0.5rem 0;">InovaTI</p>
+                <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+                    <span><i class="fas fa-map-marker-alt"></i> Presencial - SP</span>
+                    <span><i class="fas fa-clock"></i> Estágio</span>
+                </div>
+                <div class="job-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">C#</span>
+                </div>
+                <p style="margin: 1rem 0; font-weight: bold;">R$ 1.200 + Vale Transporte</p>
+                <a href="#" class="apply-btn">Candidatar-se</a>            
+            </div>
+
+            <!-- Vaga 4 -->
+            <div class="job-card" data-type="Estágio" data-location="Híbrido" data-tags="engenharia de dados tecnologia sql python aws">
+                <h3>Engenharia de Dados </h3>
+                <p style="color: var(--accent-color); margin: 0.5rem 0;">CodeBridge</p>
+                <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+                    <span><i class="fas fa-map-marker-alt"></i> Presencial - SP</span>
+                    <span><i class="fas fa-clock"></i> Estágio</span>
+                </div>
+                <div class="job-tags">
+                    <span class="tag">SQL</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">AWS</span>
+                </div>
+                <p style="margin: 1rem 0; font-weight: bold;">R$ 1.300 + Vale Transporte</p>
+                <a href="#" class="apply-btn">Candidatar-se</a>
+            </div>
+
+            <!-- Vaga 5 -->
+            <div class="job-card" data-type="Estágio" data-location="Híbrido" data-tags="desenvolvedor mobile tecnologia kotlin react native java">
+                <h3>Desenvolvedor Mobile</h3>
+                <p style="color: var(--accent-color); margin: 0.5rem 0;">BitBuddies</p>
+                <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+                    <span><i class="fas fa-map-marker-alt"></i> Presencial - SP</span>
+                    <span><i class="fas fa-clock"></i> Estágio</span>
+                </div>
+                <div class="job-tags">
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">React Native</span>
+                    <span class="tag">Java</span>
+                </div>
+                <p style="margin: 1rem 0; font-weight: bold;">R$ 1.000 + Vale Transporte</p>
+                <a href="#" class="apply-btn">Candidatar-se</a>            
+            </div>
+            
+            <!-- Vaga 6 -->
+            <div class="job-card" data-type="Estágio" data-location="Híbrido" data-tags="segurança da informação tecnologia burp suite nmap openssl">
+                <h3>Segurança da Informação</h3>
+                <p style="color: var(--accent-color); margin: 0.5rem 0;">TechStart</p>
+                <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+                    <span><i class="fas fa-map-marker-alt"></i> Híbrido - SP</span>
+                    <span><i class="fas fa-clock"></i> Estágio</span>
+                </div>
+                <div class="job-tags">
+                    <span class="tag">Burp Suite</span>
+                    <span class="tag">Nmap</span>
+                    <span class="tag">OpenSSL</span>
+                </div>
+                <p style="margin: 1rem 0; font-weight: bold;">R$ 1.500 + Vale Transporte</p>
+                <a href="#" class="apply-btn">Candidatar-se</a>            
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="img/icone.png" alt="Logo" class="logo-img">
+                        <span class="logo-text">iTrainee</span>
+                    </div>
+                    <p class="footer-about">Plataforma de desenvolvimento profissional e conexão de talentos com o mercado de tecnologia.</p>
+                </div>
+    
+                <div class="footer-column">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="itrainee.html"><i class="fas fa-chevron-right"></i> ITrainee</a></li>
+                        <li><a href="iTrainee-perfil/perfil.html"><i class="fas fa-chevron-right"></i> Perfil</a></li>
+                        <li><a href="Projeto integrador/projeto-integrador.html"><i class="fas fa-chevron-right"></i> Sobre nós</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="newsletter-text">Assine para receber nossas atualizações.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; <span id="current-year"></span> ITrainee. Todos os direitos reservados.
+                </div>
+                <div class="footer-legal">
+                    <a href="politica-privacidade.html">Política de Privacidade</a>
+                    <a href="termos-uso.html">Termos de Uso</a>
+                    <a href="cookies.html">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="itrainee.js"></script>
+</body>
+</html>

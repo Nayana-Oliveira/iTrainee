@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITrainee - Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="login.css">
+  <link rel="shortcut icon" href="../img/icone.png" type="image/png" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../itrainee.html" class="logo">
+        <img src="../img/icone.png" class="logo-img">
+        iTrainee
+    </a>
+    <div class="nav-links">
+        <a href="../itrainee.html" class="active vagas-btn">Página Inicial</a>
+    </div>
+</nav>
+
+  <div class="container">
+    <div class="form-box left">
+      <h1>Olá, bem-vindo ao ITrainee!</h1>
+      <p>Não tem uma conta?</p>
+      <button class="register-btn">
+        <a href="../iTrainee registre-se/registre-se.html">Registre-se</a>
+      </button>
+    </div>
+
+    <div class="form-box right">
+      <h1>Login</h1>
+      <form class="form-content" id="loginForm">
+        <div class="input-box">
+          <input type="text" placeholder="Nome de usuário" required />
+          <i class="fas fa-user"></i>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="Senha" required />
+          <i class="fas fa-lock"></i>
+        </div>
+
+        <div class="forgot-link">
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <p class="social-text">ou faça login com plataformas sociais</p>
+
+        <div class="social-icons">
+          <a href="https://accounts.google.com/v3/signin/identifier?checkedDomains=youtube&continue=https%3A%2F%2Fwww.google.com.br%2F&ddm=1&dsh=S-1006260094%3A1733338784778466&ec=GAZAmgQ&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=pt-BR&ifkv=AcMMx-fNOO_o4tr4GIXy-QBmcxmBdeauku534-gzoXtdEpa87hEu63NY4ajV1mG9PGmwYXoD5YafyQ&pstMsg=1"><i class='bx bxl-google'></i></a>
+          <a href="https://www.linkedin.com/login/pt-br"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsignup%3Fref_cta%3DSign%2Bup%26ref_loc%3Dheader%2Blogged%2Bout%26ref_page%3D%252F%26source%3Dheader-home"><i class='bx bxl-github'></i></a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <script src="login.js"></script>
+</body>
+</html>
